@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* --- Global Page Styles --- */
+.pageContainer {
+  background-color: #FFFFFF;
+  color: #2D3748;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 rem;
+}
+
+.sectionTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* --- Hero Section --- */
+.heroSection {
+  text-align: center;
+
+}
+
+.heroTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #6B7280;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.ctaButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #EA580C;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ctaButton:hover {
+  background-color: #C2410C;
+}
+
+/* --- Verification Section --- */
+.verificationSection {
+  padding-bottom: 6rem;
+}
+
+.verificationInputGroup {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.inputLabel {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4B5563;
+  margin-bottom: 0.5rem;
+}
+
+.inputWithButton {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.textInput {
+  flex-grow: 1;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 8px;
+  border: 1px solid #D1D5DB;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.textInput:focus {
+  outline: none;
+  border-color: #EA580C;
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+}
+
+.verifyButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #EA580C;
+  border: none;
+  padding: 0 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.verifyButton:hover {
+  background-color: #C2410C;
+}
+
+.verifyButton:disabled{
+  color: #9CA3AF;
+  background-color: #E5E7EB;
+  cursor:auto;
+}
+
+/* --- How It Works Section --- */
+.howItWorksSection {
+  padding-bottom: 6rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: left;
+   box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.25);
+}
+
+.featureTitleContainer{
+   display: flex;
+   flex-direction: row;
+   row-gap: 10px;
+
+}
+.featureIcon {
+  width: 56px;
+  height: 56px;
+  color: #220d02;
+  stroke: #EA580C;
+
+}
+
+.featureTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.featureDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+}

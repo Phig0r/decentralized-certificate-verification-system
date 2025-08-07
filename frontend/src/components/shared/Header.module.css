@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* --- Base Container --- */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* --- Theme Variants --- */
+.lightTheme {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EAECEF;
+}
+
+.darkTheme {
+  background-color: #2C3E50; /* Dark Blue */
+}
+
+/* --- Logo --- */
+.logoContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.logoTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.titleContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 8px;
+  text-align: center;
+  color:#FFFFFF ;
+}
+
+.demoRoleButton{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.darkTheme .demoRoleButton{
+  color: #BDC3C7;
+  border: 1px solid #BDC3C7;
+}
+.darkTheme .demoRoleButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+.lightTheme .logoTitle {
+  color: #1D2B3A;
+}
+
+.darkTheme .logoTitle {
+  color: #FFFFFF;
+}
+
+.logoDemoTag {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.lightTheme .logoDemoTag {
+  color: #6B7280;
+}
+
+.darkTheme .logoDemoTag {
+  color: #BDC3C7;
+}
+
+/* --- User Actions --- */
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.walletInfo {
+  text-align: right;
+}
+
+.walletLabel {
+  display: block;
+  font-size: 12px;
+  color: #BDC3C7;
+}
+
+.walletAddress {
+  display: block;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.actionButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.lightTheme .actionButton {
+  background-color: #EA580C; /* Orange */
+}
+.lightTheme .actionButton:hover {
+  background-color: #C2410C;
+}
+
+.darkTheme .actionButton {
+  background-color: #3498DB; /* Blue */
+}
+.darkTheme .actionButton:hover {
+  background-color: #2980B9;
+}

@@ -1,0 +1,195 @@
+.tableContainer {
+  font-family: 'Inter', sans-serif;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tableTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #9CA3AF;
+}
+
+.searchInput {
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid #D1D5DB;
+  background-color: #F9FAFB;
+  font-size: 16px;
+  padding-left: 3rem;
+}
+.searchInput:focus {
+  outline: none;
+  border-color: #3498DB;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* --- Grid Table Styles --- */
+.gridTable {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gridRow {
+  display: grid;
+  /* Adjusted for 6 columns */
+  grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1fr 1fr; 
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #E5E7EB;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* --- FIX: Added styles for individual cells to prevent wrapping --- */
+.gridRow > div {
+  white-space: nowrap;      /* Prevents text from wrapping to the next line */
+  overflow: hidden;         /* Hides any content that overflows the cell's width */
+  text-overflow: ellipsis;  /* Adds the "..." at the end of truncated text */
+}
+
+
+.gridRow:hover {
+   background-color: #F9FAFB;
+}
+
+.gridTable div:last-child .gridRow {
+  border-bottom: none;
+}
+
+.gridHeader {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  background-color: #F9FAFB;
+}
+
+.gridHeader:hover {
+  background-color: #F9FAFB;
+}
+
+.gridHeader div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gridHeader svg, .gridRow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.gridRow a {
+  color: #3498DB;
+  text-decoration: none;
+  font-weight: 500;
+}
+.gridRow a:hover {
+  text-decoration: underline;
+}
+
+.noIssuersMessage {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #6B7280;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+  border: 1px dashed #D1D5DB;
+}
+
+.noIssuersMessage h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4B5563;
+  margin: 0 0 0.5rem 0;
+}
+
+.noIssuersMessage p {
+  margin: 0;
+}
+
+.statusCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.statusCell::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.active {
+  color: #059669;
+  background-color: #D1FAE5;
+}
+.active::before {
+  background-color: #10B981;
+}
+
+.suspended {
+  color: #D97706;
+  background-color: #FEF3C7;
+}
+.suspended::before {
+  background-color: #F59E0B;
+}
+
+.deactivated {
+  color: #DC2626;
+  background-color: #FEE2E2;
+}
+.deactivated::before {
+  background-color: #EF4444;
+}
+
+.actionButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #3498DB;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  border: none;
+}
+.actionButton:hover {
+  background-color: #2980B9;
+}
+
+.actionButton:disabled{
+   color: #9CA3AF;
+   background-color: #E5E7EB;
+   cursor: not-allowed;
+}

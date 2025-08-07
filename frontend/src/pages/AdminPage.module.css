@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.pageContainer {
+  background-color: #F1F5F9;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+.mainContent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 1rem;
+}
+
+/* --- Navigation Bar --- */
+.navBar {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem; 
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6B7280; 
+  padding: 0.75rem 1.5rem;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  color: #454a53; 
+}
+
+.navButton.active {
+  color: #3498DB; 
+
+  border-bottom: 3px solid #3498DB;
+  font-weight: 600;
+}
+
+/* --- Content Card --- */
+.contentCard {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+  width: 1300px;
+}

@@ -1,0 +1,32 @@
+.pageContainer {
+  background-color: #F1F5F9;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.mainContent {
+  padding: 2rem;
+}
+
+.contentCard {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2.5rem;
+}
+
+.certificatesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
